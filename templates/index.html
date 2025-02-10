@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block body %}
+
+	<main>
+		<section class="main-header">
+			<h1>IEP Progess Monitoring</h1>
+			<h2>Progress Reports Made Easy</h2>
+			<p>Enter your progess monitoring data.</p>
+			<p>Gain instant inights.</p>
+			<br>
+			<form action="/upload">
+				<button type="submit" value="Get Started">Get Started</button>
+			</form>
+		</section>
+	</main>
+
+{% endblock %}

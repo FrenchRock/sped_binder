@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Andale Mono', monospace;
+    color: white;
+    background-size: cover;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #9d9d9d;
+}
+
+.main-header {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-header h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.main-header p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}

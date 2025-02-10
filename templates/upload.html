@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Upload
+{% endblock %}
+
+{% block body %}
+  <main>
+    <!--Link to download csv template-->
+    <a href="https://docs.google.com/spreadsheets/d/1jmCErjB5nqn7vFDNDIHDWlk5Bvn465PccmtYQKAWgcQ/edit?usp=sharing" target="_blank">
+      Data Template (make a copy, save as .csv)
+    </a>
+
+    <br>
+    <br>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <br>
+      <br>
+      <input type="submit" value="Upload">
+    </form>
+	</main>
+
+{% endblock %}
